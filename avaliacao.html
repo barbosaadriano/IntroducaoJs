@@ -1,0 +1,111 @@
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Avaliação - JS</title>
+			<script type="text/javascript" src="avaliacao.js"></script>
+			<style type="text/css">
+				* {padding: 0; margin: 0; box-sizing: border-box;}
+				body {font-family: Helvetica,Arial,sans-serif; color: #333; background: #eee;}
+				.wrap {
+					overflow: hidden;
+					min-height: 100vh;
+					text-align: center;
+					width: 66%;
+					margin: 0 auto;
+					background: #fc9;
+				}
+				h1, h3 {
+					margin: 20px;
+					color: #535;
+				}
+				nav {width: 100%; padding: 10px;}
+				nav ul li, nav ul {list-style: none;}
+				nav ul li {display: inline-block;}
+				nav ul li a {
+					text-decoration: none;
+					padding: 5px;
+					display: block;
+					background: #eee;
+					text-transform: uppercase;
+					color: #333;
+					box-shadow: 1px 1px 1px #333;
+					-moz-box-shadow: 1px 1px 1px #333;
+					-webkit-box-shadow: 1px 1px 1px #333;
+				}
+				nav ul li a:hover {
+					box-shadow: inset 1px 1px 1px #333;
+					-moz-box-shadow: inset 1px 1px 1px #333;
+					-webkit-box-shadow: inset 1px 1px 1px #333;
+					color: #336699;
+				}
+				#resultado {
+					display: block;
+					width: 50%;
+					height: 200px;
+					background: #333;
+					margin: 0 auto;
+					color: #fefefe;
+					overflow:scroll; 
+				}
+				input, button {
+					display: inline-block;
+					height: 50px;
+					padding: 5px;
+					background: #eee;
+					text-transform: uppercase;
+					color: #333;
+					box-shadow: 1px 1px 1px #333;
+					-moz-box-shadow: 1px 1px 1px #333;
+					-webkit-box-shadow: 1px 1px 1px #333;
+				}
+				#frm button {
+					width: 50px;
+				}
+
+			</style>
+		</head>
+		<body>
+			<div class="wrap">
+				<h1>Avaliação</h1>
+				<hr/>
+				<p>Avaliação da matéria de introdução a javascript com professor chiquitto.</p>
+				<p>Alunos: Adriano Barbosa e Marcelo de Jesus.</p>
+				<br/>
+				<nav>
+					<ul>
+						<li>
+							<a href="#" id="ex1">Exercício 1</a>
+						</li>
+						<li>
+							<a href="#" id="ex2">Exercício 2</a>
+						</li>
+						<li>
+							<a href="#" id="ex3">Exercício 3</a>
+						</li>
+						<li>
+							<a href="#" id="ex4">Exercício 4</a>
+						</li>
+						<li>
+							<a href="#" id="ex6">Exercício 6</a>
+						</li>
+					</ul>
+				</nav>
+				<br/>
+				<div>
+					<h3>Exercício 5</h3>
+					<form id="frm">
+						<input type="number" class="valor"  placeholder="Valor 1"/>
+						<input type="number" class="valor"  placeholder="Valor 2"/>
+						<button id="soma">+</button> 
+						<button id="menos">-</button>
+						<button id="mult">*</button>
+						<button id="divi">/</button> 
+					</form>
+					<h3>Resultados</h3>
+					<code id="resultado"></code>
+					<button id="limpa">Limpar resultados</button>
+				</div>
+			</div>
+		</body>
+		</html>
